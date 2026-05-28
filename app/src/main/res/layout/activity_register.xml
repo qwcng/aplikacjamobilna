@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stwórz Profil"
+            android:textColor="@color/gold"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Nazwa użytkownika"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/white"
+            android:background="@color/card"
+            android:paddingLeft="15dp"
+            android:layout_marginBottom="15dp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Hasło"
+            android:inputType="textPassword"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/white"
+            android:background="@color/card"
+            android:paddingLeft="15dp"
+            android:layout_marginBottom="15dp" />
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Wiek"
+            android:inputType="number"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/white"
+            android:background="@color/card"
+            android:paddingLeft="15dp"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Płeć:"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginBottom="5dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="25dp">
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mężczyzna"
+                android:textColor="@color/white"
+                android:layout_marginRight="20dp" />
+
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kobieta"
+                android:textColor="@color/white" />
+            <RadioButton
+                android:id="@+id/radioHelicopter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Helikopter Bojowy Boeing AH-64 Apache"
+                android:textColor="@color/white" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doświadczenie w inwestowaniu:"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginBottom="5dp" />
+
+        <Spinner
+            android:id="@+id/spinnerExperience"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/card"
+            android:layout_marginBottom="35dp" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Zarejestruj i zaloguj"
+            android:backgroundTint="@color/gold"
+            android:textColor="@color/dark" />
+
+    </LinearLayout>
+</ScrollView>

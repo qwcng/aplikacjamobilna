@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomNavigation"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Moje Pomysły Inwestycyjne"
+            android:textColor="@color/gold"
+            android:textSize="24sp"
+            android:layout_marginBottom="20dp" />
+
+        <EditText
+            android:id="@+id/poleNotatek"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="W co chcesz zainwestować? Np.\n1. Akcje Apple\n2. Złoto fizyczne\n3. Fundusz ETF..."
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:background="@color/card"
+            android:textColor="@color/white"
+            android:textColorHint="@color/gray"
+            android:padding="15dp"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/przyciskZapiszNotatki"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Zapisz moje notatki"
+            android:backgroundTint="@color/gold"
+            android:textColor="@color/dark" />
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/card"
+        app:itemIconTint="@color/gold"
+        app:itemTextColor="@color/white"
+        app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>
